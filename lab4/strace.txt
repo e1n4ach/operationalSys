@@ -1,0 +1,358 @@
+execve("/usr/bin/make", ["make", "run1"], 0x7ffec7fc63f8 /* 27 vars */) = 0
+brk(NULL)                               = 0x556ed8409000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd3299c750) = -1 EINVAL (Invalid argument)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efe7446e000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=20627, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 20627, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe74468000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0I\17\357\204\3$\f\221\2039x\324\224\323\236S"..., 68, 896) = 68
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efe7423f000
+mprotect(0x7efe74267000, 2023424, PROT_NONE) = 0
+mmap(0x7efe74267000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7efe74267000
+mmap(0x7efe743fc000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7efe743fc000
+mmap(0x7efe74455000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7efe74455000
+mmap(0x7efe7445b000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7efe7445b000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efe7423c000
+arch_prctl(ARCH_SET_FS, 0x7efe7423c740) = 0
+set_tid_address(0x7efe7423ca10)         = 1057
+set_robust_list(0x7efe7423ca20, 24)     = 0
+rseq(0x7efe7423d0e0, 0x20, 0, 0x53053053) = 0
+mprotect(0x7efe74455000, 16384, PROT_READ) = 0
+mprotect(0x556eb8d72000, 8192, PROT_READ) = 0
+mprotect(0x7efe744a8000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7efe74468000, 20627)           = 0
+getrandom("\x91\x0a\x64\x02\x83\x4e\xa2\x4a", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x556ed8409000
+brk(0x556ed842a000)                     = 0x556ed842a000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2996, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Locale name alias data base.\n#"..., 4096) = 2996
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=258, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 258, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe744a7000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27002, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 27002, PROT_READ, MAP_SHARED, 3, 0) = 0x7efe74235000
+close(3)                                = 0
+futex(0x7efe7445aa6c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=23, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 23, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe7446d000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 47, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe7446c000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=127, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 127, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe7446b000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_NAME", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=62, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 62, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe7446a000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_PAPER", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=34, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 34, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe74469000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=48, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 48, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe74468000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=270, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 270, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe74234000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1406, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1406, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe74233000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TIME", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3360, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 3360, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe74232000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=50, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 50, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe74231000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=353616, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 353616, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe741da000
+close(3)                                = 0
+rt_sigaction(SIGHUP, {sa_handler=0x556eb8d49cd0, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe74281520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x556eb8d49cd0, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe74281520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x556eb8d49cd0, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe74281520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x556eb8d49cd0, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe74281520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXCPU, {sa_handler=0x556eb8d49cd0, sa_mask=[XCPU], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe74281520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXFSZ, {sa_handler=0x556eb8d49cd0, sa_mask=[XFSZ], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe74281520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe74281520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+fcntl(1, F_GETFL)                       = 0x8402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+fcntl(1, F_SETFL, O_RDWR|O_APPEND|O_LARGEFILE) = 0
+fcntl(2, F_GETFL)                       = 0x8402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+fcntl(2, F_SETFL, O_RDWR|O_APPEND|O_LARGEFILE) = 0
+fcntl(1, F_GETFD)                       = 0
+getcwd("/mnt/c/Users/levi/programming/operationalSys/operationalSys/lab4", 4096) = 65
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+readlink("/proc/self/fd/1", "/dev/pts/0", 4095) = 10
+newfstatat(AT_FDCWD, "/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, 0) = 0
+ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+newfstatat(2, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+readlink("/proc/self/fd/2", "/dev/pts/0", 4095) = 10
+newfstatat(AT_FDCWD, "/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/gnu/include", 0x7ffd3299ae90, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+rt_sigaction(SIGCHLD, {sa_handler=0x556eb8d4fdc0, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe74281520}, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe74281520}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigaction(SIGUSR1, {sa_handler=0x556eb8d4fa90, sa_mask=[USR1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe74281520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+brk(0x556ed844b000)                     = 0x556ed844b000
+newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0777, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0777, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(3, 0x556ed842f0b0 /* 11 entries */, 32768) = 416
+getdents64(3, 0x556ed842f0b0 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+openat(AT_FDCWD, "makefile", O_RDONLY)  = 3
+fcntl(3, F_GETFD)                       = 0
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+newfstatat(3, "", {st_mode=S_IFREG|0777, st_size=1169, ...}, AT_EMPTY_PATH) = 0
+read(3, "# \320\232\320\276\320\274\320\277\320\270\320\273\321\217\321\202\320\276\321\200 \320\270 \321\204\320\273\320\260"..., 4096) = 1169
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "RCS", 0x7ffd3299ae20, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "SCCS", 0x7ffd3299ae20, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "makefile", {st_mode=S_IFREG|0777, st_size=1169, ...}, 0) = 0
+newfstatat(AT_FDCWD, "run1", 0x7ffd32998c40, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "program1", 0x7ffd32998c40, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "program1.c", {st_mode=S_IFREG|0777, st_size=878, ...}, 0) = 0
+newfstatat(AT_FDCWD, "libderivative.so", 0x7ffd32998b20, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "libderivative_forward.o", 0x7ffd32998a00, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "libderivative_forward.c", {st_mode=S_IFREG|0777, st_size=155, ...}, 0) = 0
+newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+write(1, "gcc -c -fPIC libderivative_forwa"..., 64gcc -c -fPIC libderivative_forward.c -o libderivative_forward.o
+) = 64
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "/usr/local/sbin/gcc", 0x7ffd3299a590, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/bin/gcc", 0x7ffd3299a590, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/sbin/gcc", 0x7ffd3299a590, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=928584, ...}, 0) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/usr/bin/gcc", X_OK)            = 0
+mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7efe741d1000
+rt_sigprocmask(SIG_BLOCK, ~[], [HUP INT QUIT TERM CHLD XCPU XFSZ], 8) = 0
+clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7efe741d1000, stack_size=0x9000}, 88) = 1058
+munmap(0x7efe741d1000, 36864)           = 0
+rt_sigprocmask(SIG_SETMASK, [HUP INT QUIT TERM CHLD XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1058
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "libderivative_forward.o", {st_mode=S_IFREG|0777, st_size=1496, ...}, 0) = 0
+newfstatat(AT_FDCWD, "libderivative_central.o", 0x7ffd32998a00, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "libderivative_central.c", {st_mode=S_IFREG|0777, st_size=170, ...}, 0) = 0
+write(1, "gcc -c -fPIC libderivative_centr"..., 64gcc -c -fPIC libderivative_central.c -o libderivative_central.o
+) = 64
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "/usr/local/sbin/gcc", 0x7ffd3299a590, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/bin/gcc", 0x7ffd3299a590, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/sbin/gcc", 0x7ffd3299a590, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=928584, ...}, 0) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/usr/bin/gcc", X_OK)            = 0
+mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7efe741d1000
+rt_sigprocmask(SIG_BLOCK, ~[], [HUP INT QUIT TERM CHLD XCPU XFSZ], 8) = 0
+clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7efe741d1000, stack_size=0x9000}, 88) = 1061
+munmap(0x7efe741d1000, 36864)           = 0
+rt_sigprocmask(SIG_SETMASK, [HUP INT QUIT TERM CHLD XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1061
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "libderivative_central.o", {st_mode=S_IFREG|0777, st_size=1504, ...}, 0) = 0
+write(1, "gcc -shared -o libderivative.so "..., 84gcc -shared -o libderivative.so libderivative_forward.o libderivative_central.o -lm
+) = 84
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "/usr/local/sbin/gcc", 0x7ffd3299a6b0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/bin/gcc", 0x7ffd3299a6b0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/sbin/gcc", 0x7ffd3299a6b0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=928584, ...}, 0) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/usr/bin/gcc", X_OK)            = 0
+mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7efe741d1000
+rt_sigprocmask(SIG_BLOCK, ~[], [HUP INT QUIT TERM CHLD XCPU XFSZ], 8) = 0
+clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7efe741d1000, stack_size=0x9000}, 88) = 1064
+munmap(0x7efe741d1000, 36864)           = 0
+rt_sigprocmask(SIG_SETMASK, [HUP INT QUIT TERM CHLD XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1064
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "libderivative.so", {st_mode=S_IFREG|0777, st_size=15608, ...}, 0) = 0
+newfstatat(AT_FDCWD, "libconverter.so", 0x7ffd32998b20, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "libconverter_binary.o", 0x7ffd32998a00, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "libconverter_binary.c", {st_mode=S_IFREG|0777, st_size=412, ...}, 0) = 0
+write(1, "gcc -c -fPIC libconverter_binary"..., 60gcc -c -fPIC libconverter_binary.c -o libconverter_binary.o
+) = 60
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "/usr/local/sbin/gcc", 0x7ffd3299a590, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/bin/gcc", 0x7ffd3299a590, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/sbin/gcc", 0x7ffd3299a590, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=928584, ...}, 0) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/usr/bin/gcc", X_OK)            = 0
+mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7efe741d1000
+rt_sigprocmask(SIG_BLOCK, ~[], [HUP INT QUIT TERM CHLD XCPU XFSZ], 8) = 0
+clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7efe741d1000, stack_size=0x9000}, 88) = 1067
+munmap(0x7efe741d1000, 36864)           = 0
+rt_sigprocmask(SIG_SETMASK, [HUP INT QUIT TERM CHLD XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+wait4(-1, libconverter_binary.c: In function ‘to_binary’:
+[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1067
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "libconverter_binary.o", {st_mode=S_IFREG|0777, st_size=1792, ...}, 0) = 0
+newfstatat(AT_FDCWD, "libconverter_ternary.o", 0x7ffd32998a00, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "libconverter_ternary.c", {st_mode=S_IFREG|0777, st_size=517, ...}, 0) = 0
+write(1, "gcc -c -fPIC libconverter_ternar"..., 62gcc -c -fPIC libconverter_ternary.c -o libconverter_ternary.o
+) = 62
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "/usr/local/sbin/gcc", 0x7ffd3299a590, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/bin/gcc", 0x7ffd3299a590, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/sbin/gcc", 0x7ffd3299a590, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=928584, ...}, 0) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/usr/bin/gcc", X_OK)            = 0
+mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7efe741d1000
+rt_sigprocmask(SIG_BLOCK, ~[], [HUP INT QUIT TERM CHLD XCPU XFSZ], 8) = 0
+clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7efe741d1000, stack_size=0x9000}, 88) = 1070
+munmap(0x7efe741d1000, 36864)           = 0
+rt_sigprocmask(SIG_SETMASK, [HUP INT QUIT TERM CHLD XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+wait4(-1, libconverter_ternary.c: In function ‘to_ternary’:
+[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1070
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "libconverter_ternary.o", {st_mode=S_IFREG|0777, st_size=1896, ...}, 0) = 0
+write(1, "gcc -shared -o libconverter.so l"..., 76gcc -shared -o libconverter.so libconverter_binary.o libconverter_ternary.o
+) = 76
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "/usr/local/sbin/gcc", 0x7ffd3299a6b0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/bin/gcc", 0x7ffd3299a6b0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/sbin/gcc", 0x7ffd3299a6b0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=928584, ...}, 0) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/usr/bin/gcc", X_OK)            = 0
+mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7efe741d1000
+rt_sigprocmask(SIG_BLOCK, ~[], [HUP INT QUIT TERM CHLD XCPU XFSZ], 8) = 0
+clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7efe741d1000, stack_size=0x9000}, 88) = 1073
+munmap(0x7efe741d1000, 36864)           = 0
+rt_sigprocmask(SIG_SETMASK, [HUP INT QUIT TERM CHLD XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1073
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "libconverter.so", {st_mode=S_IFREG|0777, st_size=15832, ...}, 0) = 0
+write(1, "gcc -o program1 program1.c -L. -"..., 60gcc -o program1 program1.c -L. -lderivative -lconverter -lm
+) = 60
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "/usr/local/sbin/gcc", 0x7ffd3299a7d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/bin/gcc", 0x7ffd3299a7d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/sbin/gcc", 0x7ffd3299a7d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=928584, ...}, 0) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/usr/bin/gcc", X_OK)            = 0
+mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7efe741d1000
+rt_sigprocmask(SIG_BLOCK, ~[], [HUP INT QUIT TERM CHLD XCPU XFSZ], 8) = 0
+clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7efe741d1000, stack_size=0x9000}, 88) = 1076
+munmap(0x7efe741d1000, 36864)           = 0
+rt_sigprocmask(SIG_SETMASK, [HUP INT QUIT TERM CHLD XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1076
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "program1", {st_mode=S_IFREG|0777, st_size=16224, ...}, 0) = 0
+write(1, "LD_LIBRARY_PATH=//mnt/c/Users/le"..., 110LD_LIBRARY_PATH=//mnt/c/Users/levi/programming/operationalSys/operationalSys/lab4:$LD_LIBRARY_PATH ./program1
+) = 110
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/bin/sh", X_OK)                 = 0
+mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7efe741d1000
+rt_sigprocmask(SIG_BLOCK, ~[], [HUP INT QUIT TERM CHLD XCPU XFSZ], 8) = 0
+clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7efe741d1000, stack_size=0x9000}, 88) = 1081
+munmap(0x7efe741d1000, 36864)           = 0
+rt_sigprocmask(SIG_SETMASK, [HUP INT QUIT TERM CHLD XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+wait4(-1, Enter value of x for derivative calculation: 0.5 2
+Enter deltaX for derivative calculation: Derivative (Forward method): -0.839363
+Derivative (Central method): -0.217970
+Enter an integer for number system conversion: 20
+Binary representation: 10100
+Ternary representation: 2020
+[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1081
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+newfstatat(AT_FDCWD, "run1", 0x7ffd32998ce0, 0) = -1 ENOENT (No such file or directory)
+chdir("/mnt/c/Users/levi/programming/operationalSys/operationalSys/lab4") = 0
+close(1)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
